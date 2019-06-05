@@ -178,4 +178,180 @@ http-equiv顾名思义，相当于http的文件头作用。
 ```
 
 ## 页面主体
-再找一个模板做页面主体。
+再找一个模板做页面主体。twts_153_MaterialAdmin
+
+### 改head
+包括编码，设备，关键字，描述，标题，作者，图标
+```
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="恒生软件EIS系统">
+<meta name="keywords" content="恒生软件,建站,软件开发,小程序开发,APP开发">
+<meta name="author" content="恒生软件,hundsunsoft@126.com">
+<meta name="copyright" content="粤ICP备18013766号">
+<title>恒生软件EIS系统</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Pragma" content="no-cache" />
+<link rel="shortcut icon" href="images/恒生软件logo.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+```
+
+### 改UI及其form表单
+```
+<form method="post" action="">
+										  
+    <section class="mdc-card__primary">
+        <h1 class="mdc-card__title mdc-card__title--large">选择产品</h1>
+    </section>
+    <section class="mdc-card__supporting-text" >
+        <div class="template-demo">
+        <div id="hero-js-select" class="mdc-select" role="listbox" >
+            <div class="mdc-select__surface" tabindex="0">
+            <div class="mdc-select__label">选择一款产品</div>
+            <div class="mdc-select__selected-text"></div>
+            <div class="mdc-select__bottom-line"></div>
+            </div>
+            <div class="mdc-simple-menu mdc-select__menu">
+            <ul class="mdc-list mdc-simple-menu__items">
+                <li class="mdc-list-item" role="option" tabindex="0">
+                手机壳
+                </li>
+                <li class="mdc-list-item" role="option" tabindex="0">
+                尾插
+                </li>
+                <li class="mdc-list-item" role="option" tabindex="0">
+                Fruit
+                </li>
+                <li class="mdc-list-item" role="option" tabindex="0">
+                Milk, Yogurt, and Cheese
+                </li>
+                <li class="mdc-list-item" role="option" tabindex="0">
+                Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+                </li>
+                <li class="mdc-list-item" role="option" tabindex="0">
+                Fats, Oils, and Sweets
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </section>										
+    <!-- </div> -->
+<!-- </div> -->
+
+<section class="mdc-card__supporting-text">
+    <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+            <div class="template-demo">
+                <div id="demo-tf-box-wrapper">
+                    <div id="tf-box-example" class="mdc-text-field mdc-text-field--box w-100">
+                        <input type="text" id="tf-box" class="mdc-text-field__input" aria-controls="name-validation-message" name="prodtype">
+                        <label for="tf-box" class="mdc-text-field__label">产品型号</label>
+                        <div class="mdc-text-field__bottom-line"></div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+            <div class="template-demo">
+                <div id="demo-tf-box-leading-wrapper">
+                    <div id="tf-box-leading-example" class="mdc-text-field mdc-text-field--box mdc-text-field--with-leading-icon w-100">
+                        <i class="material-icons mdc-text-field__icon" tabindex="0">event</i>
+                        <input type="text" id="tf-box-leading" class="mdc-text-field__input">
+                        <label for="tf-box-leading" class="mdc-text-field__label">查询起始日期</label>
+                        <div class="mdc-text-field__bottom-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+            <div class="template-demo">
+                <div id="demo-tf-box-leading-wrapper">
+                    <div id="tf-box-leading-example" class="mdc-text-field mdc-text-field--box mdc-text-field--with-leading-icon w-100">
+                        <i class="material-icons mdc-text-field__icon" tabindex="0">event</i>
+                        <input type="text" id="tf-box-leading" class="mdc-text-field__input">
+                        <label for="tf-box-leading" class="mdc-text-field__label">查询截止日期</label>
+                        <div class="mdc-text-field__bottom-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二排 -->
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+            <div class="template-demo">
+                <div id="demo-tf-box-wrapper">
+                    <div id="tf-box-example" class="mdc-text-field mdc-text-field--box w-100">
+                        <input type="text" id="tf-box" class="mdc-text-field__input" aria-controls="name-validation-message">
+                        <label for="tf-box" class="mdc-text-field__label">库存</label>
+                        <div class="mdc-text-field__bottom-line"></div>
+                    </div>
+                    <!-- 								          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" id="name-validation-msg">
+        Must be at least 8 characters
+        </p> -->
+                </div>
+            </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+            <div class="template-demo">
+                <input class="mdc-button mdc-button--raised" name="select" type="submit" value="查询">
+            </div>
+        </div>
+    </div>
+</section>																		
+</form>
+```
+
+# PHP部分
+## 改写html为php
+首先，改名为php结尾。
+### 先写静态php
+```
+<?php
+    function insert() {
+    $x = 100.00;
+    echo '<tr>';
+    echo '<td class="text-left">热干面</td>';
+    echo '<td>';
+    echo $x;
+    echo '</td>';
+    echo '<td>haha</td>';
+    echo '<td>haha</td>';
+    echo '<td>haha</td>';
+    echo '<td>haha</td>';
+    echo '<td>haha</td>';
+    echo '<td>haha</td>';
+    echo '<td>haha</td>';
+    }
+    if(isset($_POST['prodtype'])){
+    insert(); 
+    }
+?>
+```
+
+## 再写动态php
+### 数据库设计
+
+写MYSQL查询部分
+### 数据库连接
+query.php
+```
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+ 
+// 创建连接
+$conn = mysqli_connect($servername, $username, $password);
+ 
+// 检测连接
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "连接成功";
+
+mysqli_close($conn);
+?>
+```
+### 查询单笔并显示
+
+### 查询多笔并返回
