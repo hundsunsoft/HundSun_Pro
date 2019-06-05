@@ -1,135 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>恒生软件EIS系统</title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
-  <!-- endinject -->
-  <!-- plugin css for this page -->
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="../../css/style.css">
-  <!-- endinject -->
-  <link rel="shortcut icon" href="../../images/favicon.png" />
-</head>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="恒生软件EIS系统">
+		<meta name="keywords" content="恒生软件,建站,软件开发,小程序开发,APP开发">
+		<meta name="author" content="恒生软件,hundsunsoft@126.com">
+		<meta name="copyright" content="粤ICP备18013766号">
+		<title>恒生软件EIS系统</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<link rel="shortcut icon" href="images/恒生软件logo.jpg" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- plugins:css -->
+		<link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
+		<!-- endinject -->
+		<!-- plugin css for this page -->
+		<!-- End plugin css for this page -->
+		<!-- inject:css -->
+		<link rel="stylesheet" href="../../css/style.css">
+		<!-- endinject -->
+		<link rel="shortcut icon" href="../../images/favicon.png" />
+	</head>
 
-<body>
-  <div class="body-wrapper">
-    <!-- partial:../../partials/_sidebar.html -->
-    <aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
-      <nav class="mdc-persistent-drawer__drawer">
-        <div class="mdc-persistent-drawer__toolbar-spacer">
-          <a href="../../index.html" class="brand-logo">
-						<img src="../../images/logo.svg" alt="logo">
-					</a>
-        </div>
-        <div class="mdc-list-group">
-          <nav class="mdc-list mdc-drawer-menu">
-            <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="../../index.html">
-                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
-                Dashboard
-              </a>
-            </div>
-            <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="../../pages/forms/basic-forms.html">
-                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
-                Forms
-              </a>
-            </div>
-            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
-              <a class="mdc-drawer-link" href="#">
-                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
-                UI Features
-                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
-              </a>
-              <div class="mdc-expansion-panel" id="ui-sub-menu">
-                <nav class="mdc-list mdc-drawer-submenu">
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/ui-features/buttons.html">
-                      Buttons
-                    </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/ui-features/typography.html">
-                      Typography
-                    </a>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="../../pages/ui-features/tables.html">
-                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
-                Tables
-              </a>
-            </div>
-            <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="../../pages/charts/chartjs.html">
-                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
-                Charts
-              </a>
-            </div>
-            <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="sample-page-submenu">
-              <a class="mdc-drawer-link" href="#">
-                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
-                Sample Pages
-                <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
-              </a>
-              <div class="mdc-expansion-panel" id="sample-page-submenu">
-                <nav class="mdc-list mdc-drawer-submenu">
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/samples/blank-page.html">
-                      Blank Page
-                    </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/samples/403.html">
-                      403
-                    </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/samples/404.html">
-                      404
-                    </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/samples/500.html">
-                      500
-                    </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/samples/505.html">
-                      505
-                    </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/samples/login.html">
-                      Login
-                    </a>
-                  </div>
-                  <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="../../pages/samples/register.html">
-                      Register
-                    </a>
-                  </div>
+	<body>
+		<div class="body-wrapper">
+			<!-- partial:../../partials/_sidebar.html -->
+			<aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
+				<nav class="mdc-persistent-drawer__drawer">
+					<div class="mdc-persistent-drawer__toolbar-spacer">
+						<a href="../../index.html" class="brand-logo">
+							<img src="../../images/恒生软件EIS系统.jpg" alt="logo">
+						</a>
+					</div>
+					<div class="mdc-list-group">
+						<nav class="mdc-list mdc-drawer-menu">
+							<div class="mdc-list-item mdc-drawer-item">
+								<a class="mdc-drawer-link" href="../../index.html">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
+									仪表盘
+								</a>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item">
+								<a class="mdc-drawer-link" href="../../pages/forms/basic-forms.html">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+									表单
+								</a>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
+								<a class="mdc-drawer-link" href="#">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+									UI 功能
+									<i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+								</a>
+								<div class="mdc-expansion-panel" id="ui-sub-menu">
+									<nav class="mdc-list mdc-drawer-submenu">
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/ui-features/buttons.html">
+												按钮
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/ui-features/typography.html">
+												显示
+											</a>
+										</div>
+									</nav>
+								</div>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item">
+								<a class="mdc-drawer-link" href="../../pages/ui-features/tables.html">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+									表格
+								</a>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item">
+								<a class="mdc-drawer-link" href="../../pages/charts/chartjs.html">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+									图表
+								</a>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="sample-page-submenu">
+								<a class="mdc-drawer-link" href="#">
+									<i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+									示例页面
+									<i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+								</a>
+								<div class="mdc-expansion-panel" id="sample-page-submenu">
+									<nav class="mdc-list mdc-drawer-submenu">
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/samples/blank-page.html">
+												空白页面
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/samples/403.html">
+												403
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/samples/404.html">
+												404
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/samples/500.html">
+												500
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/samples/505.html">
+												505
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/samples/login.html">
+												登录
+											</a>
+										</div>
+										<div class="mdc-list-item mdc-drawer-item">
+											<a class="mdc-drawer-link" href="../../pages/samples/register.html">
+												注册
+											</a>
+										</div>
 
-                </nav>
-              </div>
-            </div>
-            <div class="mdc-list-item mdc-drawer-item purchase-link">
-              <a href="#product/material-admin/" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
-                Upgrade To Pro
-              </a>
-            </div>
-          </nav>
-        </div>
-      </nav>
-    </aside>
+									</nav>
+								</div>
+							</div>
+							<div class="mdc-list-item mdc-drawer-item purchase-link">
+								<a href="#product/material-admin/" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link"
+								 data-mdc-auto-init="MDCRipple">
+									Upgrade To Pro
+								</a>
+							</div>
+						</nav>
+					</div>
+				</nav>
+			</aside>
     <!-- partial -->
     <!-- partial:../../partials/_navbar.html -->
     
@@ -200,7 +209,7 @@
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
               <div class="mdc-card">
 								<section class="mdc-card__primary">
-									<h1 class="mdc-card__title mdc-card__title--large">Line chart</h1>
+									<h1 class="mdc-card__title mdc-card__title--large">销量统计（万件）</h1>
 								</section>
 								<section class="mdc-card__supporting-text">
                   <canvas id="lineChart" style="height:250px"></canvas>
@@ -210,7 +219,7 @@
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
               <div class="mdc-card">
 								<section class="mdc-card__primary">
-									<h1 class="mdc-card__title mdc-card__title--large">Bar chart</h1>
+									<h1 class="mdc-card__title mdc-card__title--large">财务统计（万元）</h1>
 								</section>
 								<section class="mdc-card__supporting-text">
                   <canvas id="barChart" style="height:230px"></canvas>
@@ -230,7 +239,7 @@
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
               <div class="mdc-card">
 								<section class="mdc-card__primary">
-									<h1 class="mdc-card__title mdc-card__title--large">Doughnut chart</h1>
+									<h1 class="mdc-card__title mdc-card__title--large">产品销售额占比</h1>
 								</section>
 								<section class="mdc-card__supporting-text">
                   <canvas id="doughnutChart" style="height:250px"></canvas>
