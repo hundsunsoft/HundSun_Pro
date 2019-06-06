@@ -197,6 +197,7 @@ http-equiv顾名思义，相当于http的文件头作用。
 ```
 
 ### 改UI及其form表单
+action=""代表调用自己，即本页面不跳转
 ```
 <form method="post" action="">
 										  
@@ -302,6 +303,12 @@ http-equiv顾名思义，相当于http的文件头作用。
 ```
 
 # PHP部分
+## 启动apache和mysql
+直接双击 Wampserver64 启动即可。
+
+php默认端口80，默认应用路径 www 。
+
+mysql默认端口3306，默认用户 root，默认密码 空 。
 ## 改写html为php
 首先，改名为php结尾。
 ### 先写静态php
