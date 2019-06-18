@@ -309,6 +309,10 @@ action=""代表调用自己，即本页面不跳转
 php默认端口80，默认应用路径 www 。
 
 mysql默认端口3306，默认用户 root，默认密码 空 。
+
+## 建表
+利用工具MySql Workbench建表
+
 ## 改写html为php
 首先，改名为php结尾。
 ### 先写静态php
